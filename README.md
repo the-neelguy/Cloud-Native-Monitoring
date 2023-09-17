@@ -4,6 +4,7 @@
 
 1. Open cmd and install the following things. Make sure you have python and pip installed.
    *   pip install flask
+     
    *   pip install psutil
 2. The psutil framework is used to fetch details about the CPU Usage or Memory Usage etc of the host computer.
 3. Create a requirements.txt file with all the requirements and run the command to install all of them into the system
