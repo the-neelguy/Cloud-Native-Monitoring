@@ -3,11 +3,11 @@
 ### STEP 1 : CREATING A PYTHON FILE ###
 
 1. Open cmd and install the following things. Make sure you have python and pip installed.
-   - pip install flask
-   - pip install psutil
+   *   pip install flask
+   *   pip install psutil
 2. The psutil framework is used to fetch details about the CPU Usage or Memory Usage etc of the host computer.
 3. Create a requirements.txt file with all the requirements and run the command to install all of them into the system
-   - pip install -r requirements.txt
+   *   pip install -r requirements.txt
 5. Once done, create a python file and copy the code.
 6. The code creates two variables and fetches the value of cpu usage and memory usage using the psutil built-in functions
 7. If the values are more than 80 (independently), then a warning message is shown
