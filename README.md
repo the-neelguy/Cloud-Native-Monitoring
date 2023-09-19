@@ -8,12 +8,16 @@
    pip install flask
    ```    
     
-   ```pip install psutil ```    
+   ```
+   pip install psutil
+   ```    
    
 3. The psutil framework is used to fetch details about the CPU Usage or Memory Usage etc of the host computer.
 4. Create a requirements.txt file with all the requirements and run the command to install all of them into the system
    
-   ``` pip install -r requirements.txt ```
+   ```
+   pip install -r requirements.txt
+   ```
     
 6. Once done, create a python file and copy the code.
 7. The code creates two variables and fetches the value of cpu usage and memory usage using the psutil built-in functions
@@ -36,7 +40,9 @@
 
 1. Open terminal (VSCODE) and run the follwing command to start the server on localhost. Once started, click on the URL to open the server.
    
-   ``` python _name_.py ```
+   ```
+   python _name_.py
+   ```
    
    In my case, it is app.py
 3. You can see the readings and the visualization using a gauge reader on the screen. You can also refresh to see the changing cpu and memory usage.
@@ -56,13 +62,17 @@
 9. Expose port 5000 to run the app
 10. Start the flask app when the container runs
 
-11. Once the code is copied, the following command is run to create a docker image.
+11. Once the code is copied, the following command is run to create a docker image. Give a custom name of the application 
     
-    ``` docker build -t _nameofapplication_ . ```
-      
+    ```
+    docker build -t status-monitoring-app .
+    ```
+   
 13. Once the image is created, we run the following command to create the container out of it using the unique id/name and to start the server
     
-    ``` docker run -p 5000:5000 _uniqueid_ ```
+    ```
+    docker run -p 5000:5000 8fd5b56a199b
+    ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
