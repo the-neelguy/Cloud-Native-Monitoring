@@ -10,12 +10,13 @@
    
 3. The psutil framework is used to fetch details about the CPU Usage or Memory Usage etc of the host computer.
 4. Create a requirements.txt file with all the requirements and run the command to install all of them into the system
-   *   pip install -r requirements.txt
+   
+   ``` pip install -r requirements.txt ```
     
-5. Once done, create a python file and copy the code.
-6. The code creates two variables and fetches the value of cpu usage and memory usage using the psutil built-in functions
-7. If the values are more than 80 (independently), then a warning message is shown
-8. The render template is used to generate output from a template file based on the Jinja2 engine that is found in the application's templates folder
+6. Once done, create a python file and copy the code.
+7. The code creates two variables and fetches the value of cpu usage and memory usage using the psutil built-in functions
+8. If the values are more than 80 (independently), then a warning message is shown
+9. The render template is used to generate output from a template file based on the Jinja2 engine that is found in the application's templates folder
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -32,9 +33,10 @@
 ### STEP 3 : RUN ON LOCALHOST ###
 
 1. Open terminal (VSCODE) and run the follwing command to start the server on localhost. Once started, click on the URL to open the server.
-   *  python _name_.py
+   
+   ``` python _name_.py ```
    In my case, it is app.py
-2. You can see the readings and the visualization using a gauge reader on the screen. You can also refresh to see the changing cpu and memory usage.
+3. You can see the readings and the visualization using a gauge reader on the screen. You can also refresh to see the changing cpu and memory usage.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
