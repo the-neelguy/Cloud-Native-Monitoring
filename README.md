@@ -68,7 +68,7 @@
     docker build -t status-monitoring-app .
     ```
    
-13. Once the image is created, we run the following command to create the container out of it using the unique id/name and to start the server
+13. Once the image is created, we run the following command to create the container out of it using the unique id/name and to start the server. You can see the image id by running the command ``` docker images ``` and copy the respective id from the list.
     
     ```
     docker run -p 5000:5000 8fd5b56a199b
