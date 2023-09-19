@@ -2,10 +2,10 @@
 
 ### STEP 1 : CREATING A PYTHON FILE ###
 
-1. Open cmd and install the following things. Make sure you have python and pip installed.
-   ```   pip install flask ```    
+1. Open cmd and install the following things. Make sure you have python and pip installed
+   ``` *   pip install flask ```    
     
-   ```  pip install psutil ```    
+   ``` *   pip install psutil ```    
    
 3. The psutil framework is used to fetch details about the CPU Usage or Memory Usage etc of the host computer.
 4. Create a requirements.txt file with all the requirements and run the command to install all of them into the system
