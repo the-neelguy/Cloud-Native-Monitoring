@@ -35,6 +35,7 @@
 1. Open terminal (VSCODE) and run the follwing command to start the server on localhost. Once started, click on the URL to open the server.
    
    ``` python _name_.py ```
+   
    In my case, it is app.py
 3. You can see the readings and the visualization using a gauge reader on the screen. You can also refresh to see the changing cpu and memory usage.
 
@@ -53,11 +54,13 @@
 9. Expose port 5000 to run the app
 10. Start the flask app when the container runs
 
-11. Once the code is copied, the following command is run to create a docker image -
-    *  docker build -t _nameofapplication_ .
+11. Once the code is copied, the following command is run to create a docker image.
+    
+    ``` docker build -t _nameofapplication_ . ```
       
-12. Once the image is created, we run the following command to create the container out of it using the unique id/name and to start the server
-    *  docker run -p 5000:5000 _uniqueid_
+13. Once the image is created, we run the following command to create the container out of it using the unique id/name and to start the server
+    
+    ``` docker run -p 5000:5000 _uniqueid_ ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
