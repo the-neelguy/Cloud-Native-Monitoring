@@ -4,7 +4,9 @@
 
 1. Open cmd and install the following things. Make sure you have python and pip installed.
    
-   ```pip install flask ```    
+   ```
+   pip install flask
+   ```    
     
    ```pip install psutil ```    
    
