@@ -76,3 +76,25 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+### STEP 5 : ELASTIC CONTAINER REGISTRY ###
+
+1. Login to your AWS Console and create an user from IAM
+2. Click on the user and create an access key with proper authentication
+3. Click on permissions and search for ``` AmazonEC2ContainerRegistryFullAccess ``` and provide the access
+4. Open AWS documentation and setup AWS CLI for windows
+5. Open CMD and type ``` aws congifure ``` and provide the perfect Access credentials.
+6. Now create an environment for python with the following command. Afterwards activate the environment.
+   ```
+   python -m venv myenv
+   ```
+   ```
+   myenv\Scripts\activate
+   ```
+7. If you face any error, mostly its related to Powershell's executing policy. For that, open powershell as administrator and type the following command.
+   ```
+   Set-ExecutionPolicy RemoteSigned
+   ```
+8. Now install boto3 inside your environment by ```pip install boto3```
+9. Once its done, create a new file called _ecr.py_ and copy the copy and finally run it using ```python ecr.py```
+10. You will be provided with the ECR url. You can login to your Amazon account and navigate to ECR to confirm this.
+
