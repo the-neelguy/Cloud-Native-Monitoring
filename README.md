@@ -97,4 +97,15 @@
 8. Now install boto3 inside your environment by ```pip install boto3```
 9. Once its done, create a new file called _ecr.py_ and copy the copy and finally run it using ```python ecr.py```
 10. You will be provided with the ECR url. You can login to your Amazon account and navigate to ECR to confirm this.
+11. Inside the ECR, click on View Push Commands and copy paste the commands in your vs code terminal and run them one by one.
+12. Once the docker image is created and pushed into the ECR Repo, you can find the image with the corresponding name.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+### STEP 6 : ELASTIC KUBERNETES SERVICES ###
+
+1. Go to EKS under Computer in AWS
+2. Click on Create new cluster
+3. Create a cluster with the on-screen instructions. Provide proper VPC, subnet and Security Groups. Make sure to have 5000 port enabled in the security group.
+4. Finally click on *Create Cluster* and wait for a couple of minutes as it is going to take time.
+5. 
