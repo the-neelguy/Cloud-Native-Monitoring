@@ -3,18 +3,26 @@
 ### STEP 1 : CREATING A PYTHON FILE ###
 
 1. Open cmd and install the following things. Make sure you have python and pip installed.
-   *   pip install flask    
+   
+   ```
+   pip install flask
+   ```    
     
-   *   pip install psutil    
+   ```
+   pip install psutil
+   ```    
    
 3. The psutil framework is used to fetch details about the CPU Usage or Memory Usage etc of the host computer.
 4. Create a requirements.txt file with all the requirements and run the command to install all of them into the system
-   *   pip install -r requirements.txt
+   
+   ```
+   pip install -r requirements.txt
+   ```
     
-5. Once done, create a python file and copy the code.
-6. The code creates two variables and fetches the value of cpu usage and memory usage using the psutil built-in functions
-7. If the values are more than 80 (independently), then a warning message is shown
-8. The render template is used to generate output from a template file based on the Jinja2 engine that is found in the application's templates folder
+6. Once done, create a python file and copy the code.
+7. The code creates two variables and fetches the value of cpu usage and memory usage using the psutil built-in functions
+8. If the values are more than 80 (independently), then a warning message is shown
+9. The render template is used to generate output from a template file based on the Jinja2 engine that is found in the application's templates folder
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -31,9 +39,13 @@
 ### STEP 3 : RUN ON LOCALHOST ###
 
 1. Open terminal (VSCODE) and run the follwing command to start the server on localhost. Once started, click on the URL to open the server.
-   *  python _name_.py
+   
+   ```
+   python _name_.py
+   ```
+   
    In my case, it is app.py
-2. You can see the readings and the visualization using a gauge reader on the screen. You can also refresh to see the changing cpu and memory usage.
+3. You can see the readings and the visualization using a gauge reader on the screen. You can also refresh to see the changing cpu and memory usage.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -50,11 +62,17 @@
 9. Expose port 5000 to run the app
 10. Start the flask app when the container runs
 
-11. Once the code is copied, the following command is run to create a docker image -
-    *  docker build -t _nameofapplication_ .
-      
-12. Once the image is created, we run the follwing command to create the container out of it using the unique id/name
-    *  docker run -p 5000:5000 _uniqueid_
+11. Once the code is copied, the following command is run to create a docker image. Give a custom name of the application 
+    
+    ```
+    docker build -t status-monitoring-app .
+    ```
+   
+13. Once the image is created, we run the following command to create the container out of it using the unique id/name and to start the server. You can see the image id by running the command ``` docker images ``` and copy the respective id from the list.
+    
+    ```
+    docker run -p 5000:5000 8fd5b56a199b
+    ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
