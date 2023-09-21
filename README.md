@@ -115,10 +115,10 @@
 
 ### STEP 7 : CREATE DEPLOYMENT AND SERVICE
 
-1. Create a file called *eks.py* and copy the code
+1. Create a file called *myeks.py* and copy the code
 2. Make sure to change the Image URI on line number 26 from your image in ECR
 3. Download kubernetes inside the environment using ```pip install kubernetes```
-4. Run the file using ```python eks.py```
+4. Run the file using ```python myeks.py```
 5. Now run by checking the following commands - 
    ```
    kubectl get deployment -n default (to check deployments)
