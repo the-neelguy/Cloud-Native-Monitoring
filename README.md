@@ -1,4 +1,18 @@
 # Cloud-Native-Monitoring
+--------------------------------------------------------
+
+## WHAT IS THIS ? ##
+
+This project is a status monitoring application built using python to monitor the cpu ussage or memory usage and then dockerized and deployed in AWS Cloud with the help of Container Registry and Kubernestes Services.
+
+#### Some requirements ####
+
+1. AWS Account
+2. VS Code or any code editor
+3. Docker Installed in System
+4. Python and pip installed
+
+------------------------------------------------------------------------
 
 ### STEP 1 : CREATING A PYTHON FILE ###
 
