@@ -108,4 +108,33 @@
 2. Click on Create new cluster
 3. Create a cluster with the on-screen instructions. Provide proper VPC, subnet and Security Groups. Make sure to have 5000 port enabled in the security group.
 4. Finally click on *Create Cluster* and wait for a couple of minutes as it is going to take time.
-5. 
+5. Once the cluster is created, click on *Compute* and click on *Add a new node group*
+6. Follow the on screen instructions. Make sure to have *t2 micro* as it comes under free tier otherwise you will be charged. Proceed further and click on Create a Node Group.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+### STEP 7 : CREATE DEPLOYMENT AND SERVICE
+
+1. Create a file called *eks.py* and copy the code
+2. Make sure to change the Image URI on line number 26 from your image in ECR
+3. Download kubernetes inside the environment using ```pip install kubernetes```
+4. Run the file using ```python eks.py```
+5. Now run by checking the following commands - 
+   ```
+   kubectl get deployment -n default (to check deployments)
+   kubectl get service -n default (to check service)
+   kubectl get pods -n default (to check the pods)
+   ```
+6. Once the pods are running, run the port-forward to expose the service. Run the following command - 
+   ```
+   kubectl port-forward service/<service_name> 5000:5000
+   ```
+7. Now you can also view the application in your localhost using ```localhost:5000```
+
+![Alt text](image.png)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### STEP 8 : DELETE RESOURCES ###
+
+Make sure to delete node groups and cluster from EKS and the images from ECR in AWS to prevent excessive billing. You can also visit ```Billing``` in AWS account to view the proper billing structure and analyse the cost per usage.
